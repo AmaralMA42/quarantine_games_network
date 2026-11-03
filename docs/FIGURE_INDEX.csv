@@ -1,0 +1,17 @@
+figure,quantity,root,inputs,limits,renderer
+1,Conceitual,reproduction/main,reference/FIG1_PRESERVED_LAYOUT.png,Não é um novo grafo amostrado.,fpm.visuals.response.state_scheme
+2,Histórias selecionadas,reproduction/main,data/fig2/*.csv,Ilustrativa; novas epidemias não foram executadas.,fpm.visuals.response.epidemic_histories
+3,"Pmacro, alcance e proteção",reproduction/main,preserved_renderers/fig3,"Bancos iniciais e adicionais distintos; C,D sem barras.",fpm.visuals.topology.establishment_response
+4,"Alcance, pico, duração e proteção",reproduction/main,data/fig4_values.csv; evidence/fig4/source,N e endpoints distintos; três painéis separam ramos.,fpm.visuals.response.parameter_response
+5,Alcance e duração,reproduction/main,data/FIG5_REACH_4480_VALUES.csv; data/FIG5_DURATION_4480_VALUES.csv,Cada célula medida; sem interpolação.,fpm.visuals.response.measured_maps
+6,Probabilidade de recorrência,reproduction/main,data/FIG6_RECURRENCE_4480_VALUES.csv,Detector dos mapas é separado do da Fig. 10.,fpm.visuals.response.measured_maps
+7,Janelas e larguras,reproduction/main,preserved_renderers/fig7; evidence/fig7_8_methods,"Incerteza condicional, sem garantia simultânea.",fpm.visuals.topology.population_crossovers
+8,Marcos medidos,reproduction/main,data/fig8_landmarks.csv; selected_fig8,Sem barras; eixo linear com corte aprovado.,fpm.visuals.topology.response_landmarks
+9,Contrastes de controles,reproduction/main,data/fig9_contrasts.csv; evidence/fig9,"Barras condicionais às âncoras, sem calibração nova.",fpm.visuals.topology.paired_controls
+10,Profundidade de recorrência,reproduction/main,data/fig10_conditional_intervals.csv; evidence/fig10,No new epidemics; detector replay and source identity are not full binary validation.,fpm.visuals.response.recurrence_depth
+11,Cinco pares de alcance,reproduction/main,data/fig11_contrasts.csv; evidence/fig4/source,Sem barras; dados de RRG3/4 compartilhados entre pares.,fpm.visuals.topology.degree_matched_reach
+S1,Endpoint ODE,reproduction/si,data/s1/ENDPOINT_THRESHOLD_VALUES.csv,Tabela e fonte histórica; não houve nova integração.,fpm.visuals.sensitivity.endpoint_sensitivity
+S2,Número médio de picos,reproduction/si,data/s2/PAPER_WINDOW_5OBS.csv,Mesmo acervo medido dos mapas principais.,fpm.visuals.sensitivity.mean_peak_map
+S3,Controles completos,reproduction/si,data/s3/ORIGINAL_PAIRED_CONTRASTS.csv,Primeiro aumento não é o marco de separação de intervalos.,fpm.visuals.sensitivity.control_sensitivity
+S4,Introdução única,reproduction/si,data/s4/PRIMARY_832_COUNTS.csv,Retained outcomes are not832 dense temporal traces; preserve historical metadata precision limits.,fpm.visuals.sensitivity.single_introduction
+S5,Updating em I0=1,reproduction/si,data/single_introduction,RRG3 bootstrap remains exploratory with4 graph clusters; generator seeds for these four P8 graphs remain unknown.,fpm.visuals.sensitivity.single_introduction_controls

@@ -1,0 +1,194 @@
+[
+  {
+    "path": "main.py",
+    "parent_sha256": "c14fab53d2017baf7f12ebb5a2544092f865e39bc9546fb6c3da7dd17c13a3de",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/main.py",
+    "treatment": "ONLY_PREPARE_DATA_COMMAND_ADDED"
+  },
+  {
+    "path": "verify_inputs.py",
+    "parent_sha256": "88d5ff75ddc4724a19245a88b956b1e599752ecb67e076362357744ab76bada3",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/verify_inputs.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "requirements.txt",
+    "parent_sha256": "84c176b5e83863fe4c43deda407cff360c91c0ffa015ae7c6691efee57754b4c",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/requirements.txt",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "VARIABLES.md",
+    "parent_sha256": "e9f4d820ac9699ccb05976c182792f1467b7234c461ce6469832fcb236961a3d",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/VARIABLES.md",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/averages.py",
+    "parent_sha256": "395233e7d53e33caff9884c23764d6922bbab5e47e981bb8ea0fe8fbbd095cca",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/averages.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/dynamics.py",
+    "parent_sha256": "3793eb0d2b454017e3e81eb9ce7ad11b26d39d49e8d1f202123b819f16a4e1c7",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/dynamics.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/heatmaps.py",
+    "parent_sha256": "55ac973dd0d122145be41e87713085a3c96cdb673e1939fe9e3573faee93946c",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/heatmaps.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/model.py",
+    "parent_sha256": "5132b2c19c1b77f0fe2b5ae326c9b19d362121e705b2b020a6d5a91b1f6f9596",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/model.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/parameters.py",
+    "parent_sha256": "25903d9a2205455e9eee2d61019e8532ead4da15bf496d992fb30aeed383cf64",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/parameters.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/published.py",
+    "parent_sha256": "24f1b30f817c5d8b963de12fec566bc3412404a41470290d315334e22a05eba3",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/published.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/__init__.py",
+    "parent_sha256": "8afc0806e7d6559a3385239422bdf3afb6e0db05fdd6de1a02e5dedbb58c1b01",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/__init__.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/inference.py",
+    "parent_sha256": "a7961b81c41963d7bf6fd773a43abb457d0d6a9e297bc6ebd1b3dd88dd1ca50b",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/inference.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/pipeline.py",
+    "parent_sha256": "347ee1c37a1d13aff8f788b3b332bf2633b2951bf60c16801dd2451162a7b535",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/pipeline.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/response.py",
+    "parent_sha256": "87d3df0bd5d38dfa24f9da9d9e67dcd1ae875349b39b5352b23d5e8a2f03fb39",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/response.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/sensitivity.py",
+    "parent_sha256": "ecbf9d26792f8cee333d4819f1579384400d94374252ce44d5e8276c4d16be44",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/sensitivity.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/style.py",
+    "parent_sha256": "63c91eb77aa80af9cdb222cef53f7e666844ead4b9057cd3bbed61528f35542d",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/style.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/topology.py",
+    "parent_sha256": "9fc058afd5ee7814c3ba3bf6a31d46481b33bc8ecaa6874ebecee2cc1d779160",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/topology.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/validation.py",
+    "parent_sha256": "ccfa941416280031de89a69ec8ff8cf60b982a6635abbb26f2cf2149c55b1f34",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/validation.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/__init__.py",
+    "parent_sha256": "2c10885428685a305e20438a83dfde1c74c3771ea327d23ddd0b3294a340cfc9",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/fpm/visuals/__init__.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/src/fpm_network_sim.cpp",
+    "parent_sha256": "8055e43fd11cdabc652ff687577f8d88262a9ec8e5a61a949ae1c5a614339f8a",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/src/fpm_network_sim.cpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/beta_contract.hpp",
+    "parent_sha256": "a390ac55bb45c65cebc960a06a5cbe7809098b9a94fb68b59867108cc501f9ae",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/beta_contract.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/graph.hpp",
+    "parent_sha256": "5ae351a3b37a101c5b23374713e0e4af595d2bc0438ba34f1e7762dd3ac5a25c",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/graph.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/outcome.hpp",
+    "parent_sha256": "5976a8189a07a059d99265e5e16bbc98d1ee8d7ab568d6a449a0b999545c2f5b",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/outcome.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/periodic_certificate.hpp",
+    "parent_sha256": "0cc83dc5580e7b10b74a6c7a29b58a5031a0e750b0e9200eeab4f05c397c5606",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/periodic_certificate.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/pools.hpp",
+    "parent_sha256": "a6fba7bfbdd2abdcbf2541806c786187260e49d1910b28e5ca8a6f7834cb95ea",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/pools.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/run_spec.hpp",
+    "parent_sha256": "2b5d0da17f15b5b72864b8082eae45364762457a2bf5fd5dc130758b3544f66b",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/run_spec.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/sha256.hpp",
+    "parent_sha256": "ab94ecb3b6097713f520f0a2dbee834ccf39e727c135f2db297c24ad0e022942",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/sha256.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "engine/include/fpm/stable_rng.hpp",
+    "parent_sha256": "6aa64116a3627be2bd886f415dcdecd7c366489861b1538f4c705b1fc377e69c",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/engine/include/fpm/stable_rng.hpp",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "analysis/check_observables.py",
+    "parent_sha256": "f1d79fb3674d7b7ad127c320d57d7847c3a2cfc0dcfd2663ca922cef659646f5",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/analysis/check_observables.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "analysis/check_recovered.py",
+    "parent_sha256": "6fdaff0dbe972cde55aa70b685976e16775cccfa65184e477dfa6525b5771021",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/analysis/check_recovered.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "recovery/regenerate_fig10_graphs.py",
+    "parent_sha256": "0b0dc99d751bfa64f5a642d15cee166476a5531aaaafa60390b5d318707851cb",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/recovery/regenerate_fig10_graphs.py",
+    "treatment": "UNCHANGED"
+  },
+  {
+    "path": "recovery/inputs/p8_original/code/analyze_p8.py",
+    "parent_sha256": "df5104cbae310170ce0a5747a2fdbde9a0cf48f2160b60c066fd8ce44f977c56",
+    "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/recovery/inputs/p8_original/code/analyze_p8.py",
+    "treatment": "UNCHANGED"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "filename": "quarantine_games_network_rc9.5_p10.4_data_20261103.zip",
+  "sha256": "96c4ee1193f35c3e95be1e92146f8f4faf120a04bb03b557d30ab050e6d2c8f0",
+  "zip_root": "FPM_SHARED_20261102",
+  "manifest_files": 1366,
+  "original_bindings": 1313,
+  "public_data_url": "https://github.com/AmaralMA42/quarantine_games_network/releases/download/rc9.5-p10.4-20261103/quarantine_games_network_rc9.5_p10.4_data_20261103.zip",
+  "epidemic_runs_on_attachment": 0,
+  "parent_archive_sha256": "0855c851efcd4d6df25675e305b47a213f49ba6d6f2b6c9e65ac97f8f5e4cd14",
+  "release_tag": "rc9.5-p10.4-20261103",
+  "software_license": "MIT",
+  "scientific_data_license": "CC-BY-4.0"
+}
