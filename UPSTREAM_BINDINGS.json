@@ -190,5 +190,11 @@
     "parent_sha256": "df5104cbae310170ce0a5747a2fdbde9a0cf48f2160b60c066fd8ce44f977c56",
     "source": "outputs/FPM_RC95_UNIFIED_VISUAL_MODULES_CANDIDATE_20261102/payload/recovery/inputs/p8_original/code/analyze_p8.py",
     "treatment": "UNCHANGED"
+  },
+  {
+    "path": "fpm/visuals/article.py",
+    "parent_sha256": null,
+    "source": "Authorial V13 presentation composition and relative-landmark renderer",
+    "treatment": "Presentation logic integrated into shared modules; same current input hashes; no new dynamics"
   }
 ]

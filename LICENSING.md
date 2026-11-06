@@ -12,12 +12,12 @@ for compatibility with the scientific reconstruction.
   release. The existing repository `LICENSE` is preserved verbatim.
 * **CC BY 4.0**: original simulation results, graph edge lists, derived numerical
   tables, scientific figures and figure reference images distributed with this
-  version, including the data release asset `quarantine_games_network_rc9.5_p10.4_data_20261103.zip`. The legal text is in
+  version, including the unchanged base asset `quarantine_games_network_rc9.5_p10.4_data_20261103.zip` and the current update asset `quarantine_games_network_authorial_20261106_update.zip`. The legal text is in
   `LICENSES/CC-BY-4.0.txt`: https://creativecommons.org/licenses/by/4.0/.
 
 For data or figure reuse, credit Marco Antonio Amaral, identify the repository and
 version, link the applicable license and indicate changes. `CITATION.cff` provides
-the software citation; no article DOI or data DOI is claimed for this prerelease.
+the software citation; no article DOI or data DOI is claimed for this version.
 Citation requests do not add conditions to the MIT license.
 
 Dependencies retain their own licenses and are installed separately. Any

@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "Please cite this software and its version when reusing the code or data."
 type: software
 title: "Quarantine Games on Networks: simulation, analysis and reproducibility"
-version: "rc9.5-p10.4-20261103"
-date-released: 2026-11-03
+version: "rc9.5-p10.4-authorial-20261106"
+date-released: 2026-11-06
 url: "https://github.com/AmaralMA42/quarantine_games_network"
 repository-code: "https://github.com/AmaralMA42/quarantine_games_network"
 license: MIT

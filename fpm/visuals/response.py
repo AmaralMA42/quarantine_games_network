@@ -234,7 +234,7 @@ def recurrence_depth(ctx):
                 assert np.allclose(seg, [[r.k, r.selected_lo], [r.k, r.selected_hi]], atol=1e-14, rtol=0)
                 segments.append(dict(panel=panel, topology=t, k=int(r.k), lo=float(seg[0, 1]), hi=float(seg[1, 1])))
             records += d.to_dict('records')
-        a.set(xlabel='$k$', ylabel='$P(n_p\\geq k)$', xticks=[2, 3, 4, 5], ylim=(-0.04, 1.04))
+        a.set(xlabel='$m$', ylabel='$P(n_p\\geq m)$', xticks=[2, 3, 4, 5], ylim=(-0.04, 1.04))
         a.set_title(panel, loc='left', fontweight='bold')
         clean(a)
     topology_legend(fig, [Line2D([], [], color='#111111', marker='x', label='Finite WM (CTMC)')])

@@ -1,0 +1,20 @@
+{
+  "version": "rc9.5-p10.4-authorial-20261106",
+  "filename": "quarantine_games_network_authorial_20261106_update.zip",
+  "sha256": "80ff9d60dd65cde660b7c7e491b2ca4175cf559fd0eed0b212f9e72d9055ad34",
+  "bytes": 1549855,
+  "zip_root": "QG_ARTICLE_UPDATE_20261106",
+  "manifest_path": "article_update/MANIFEST_SHA256.csv",
+  "manifest_sha256": "debee35020b0ade6445bb3a9ef297c85809cbe9029f0a1e727f8c2d560ed35a0",
+  "manifest_files": 70,
+  "scientific_input_analysis_files": 51,
+  "current_reference_assets": 18,
+  "active_index": "article_update/ACTIVE_FIGURE_ASSETS.json",
+  "public_data_url": "https://github.com/AmaralMA42/quarantine_games_network/releases/download/rc9.5-p10.4-authorial-20261106/quarantine_games_network_authorial_20261106_update.zip",
+  "requires_base_archive": "quarantine_games_network_rc9.5_p10.4_data_20261103.zip",
+  "requires_base_sha256": "96c4ee1193f35c3e95be1e92146f8f4faf120a04bb03b557d30ab050e6d2c8f0",
+  "new_epidemic_runs": 0,
+  "new_intervals": 0,
+  "software_license": "MIT",
+  "scientific_data_license": "CC-BY-4.0"
+}

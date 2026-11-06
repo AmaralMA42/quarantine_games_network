@@ -4,7 +4,7 @@ from fpm import dynamics,parameters,averages,heatmaps,published
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);sub=parser.add_subparsers(dest='command',required=True)
-    p=sub.add_parser('prepare-data');p.add_argument('--archive',required=True);p.add_argument('--check-only',action='store_true')
+    p=sub.add_parser('prepare-data');p.add_argument('--archive',required=True);p.add_argument('--update-archive');p.add_argument('--check-only',action='store_true')
     p=sub.add_parser('build-engine');p.add_argument('--compiler',required=True)
     p=sub.add_parser('validate');p.add_argument('--design',required=True)
     p=sub.add_parser('plan');p.add_argument('--template',required=True);p.add_argument('--grid',required=True);p.add_argument('--output',required=True)
@@ -16,7 +16,7 @@ def main():
     a=parser.parse_args()
     if a.command=='prepare-data':
         from fpm import data_bundle
-        result=data_bundle.prepare(a.archive,a.check_only)
+        result=data_bundle.prepare(a.archive,a.check_only,a.update_archive)
     elif a.command=='build-engine':result=dynamics.build_engine(a.compiler)
     elif a.command=='validate':result=dict(rows=len(dynamics.read_design(a.design)),status='VALID')
     elif a.command=='plan':result=parameters.make_sweep(a.template,a.grid,a.output)

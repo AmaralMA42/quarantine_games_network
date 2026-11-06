@@ -1,13 +1,19 @@
 {
   "status": "PUBLIC_REPRODUCIBILITY_PRERELEASE",
-  "version": "rc9.5-p10.4-20261103",
-  "manuscript_status": "CANDIDATE_UNPROMOTED",
+  "version": "rc9.5-p10.4-authorial-20261106",
+  "manuscript_status": "AUTHOR_AUTHORIZED_CLOSURE_OF_V13",
   "repository_url": "https://github.com/AmaralMA42/quarantine_games_network",
   "software_license": "MIT",
   "scientific_data_and_figures_license": "CC-BY-4.0",
   "public_data_url": "https://github.com/AmaralMA42/quarantine_games_network/releases/download/rc9.5-p10.4-20261103/quarantine_games_network_rc9.5_p10.4_data_20261103.zip",
-  "release_url": "https://github.com/AmaralMA42/quarantine_games_network/releases/tag/rc9.5-p10.4-20261103",
+  "release_url": "https://github.com/AmaralMA42/quarantine_games_network/releases/tag/rc9.5-p10.4-authorial-20261106",
   "DOI": null,
-  "accepted_or_promoted": false,
-  "FPM_framework_included": false
+  "FPM_framework_included": false,
+  "current_figure_assets": 18,
+  "current_SI_figures": 6,
+  "base_data_release": "rc9.5-p10.4-20261103",
+  "current_update": "ARTICLE_UPDATE.json",
+  "author_canonization_authorized": true,
+  "journal_accepted": false,
+  "submitted": false
 }

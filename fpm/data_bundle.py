@@ -29,7 +29,7 @@ def contained_path(root, name):
     return target
 
 
-def prepare(archive, check_only=False):
+def _prepare_base(archive, check_only=False):
     root = ROOT.resolve()
     archive = Path(archive).resolve()
     specification = json.loads((root/'DATA_BUNDLE.json').read_text(encoding='utf-8'))
@@ -104,4 +104,52 @@ def prepare(archive, check_only=False):
         result['files_added'] = len(planned)
     (root/'qa').mkdir(exist_ok=True)
     (root/'qa/DATA_ATTACHMENT.json').write_text(json.dumps(result, indent=2)+'\n', encoding='utf-8')
+    return result
+
+
+def _prepare_update(archive, check_only=False):
+    root=ROOT.resolve();archive=Path(archive).resolve()
+    specification=json.loads((root/'ARTICLE_UPDATE.json').read_text('utf-8'))
+    if digest(archive)!=specification['sha256']:raise ValueError('Current update archive checksum mismatch')
+    prefix=specification['zip_root']+'/'
+    manifest_name=specification['manifest_path']
+    with zipfile.ZipFile(archive) as bundle:
+        infos=bundle.infolist()
+        if len({x.filename for x in infos})!=len(infos):raise ValueError('Duplicate update member')
+        for info in infos:
+            if not info.filename.startswith(prefix):raise ValueError('Unexpected update root')
+            name=info.filename[len(prefix):]
+            if not name.startswith('article_update/'):raise ValueError('Update may only write inside article_update')
+            if stat.S_ISLNK(info.external_attr>>16):raise ValueError('Update symlink is not supported')
+            contained_path(root,name)
+        manifest=bundle.read(prefix+manifest_name)
+        if hashlib.sha256(manifest).hexdigest()!=specification['manifest_sha256']:raise ValueError('Update manifest checksum mismatch')
+        rows=list(csv.DictReader(io.StringIO(manifest.decode('utf-8-sig'))))
+        paths=[x['path'] for x in rows]
+        if len(paths)!=len(set(paths)) or len(rows)!=specification['manifest_files']:raise ValueError('Unexpected update manifest')
+        if set(paths)|{manifest_name}!={x.filename[len(prefix):] for x in infos}:raise ValueError('Update manifest/member mismatch')
+        planned=[]
+        for row in rows+[{'path':manifest_name,'bytes':len(manifest),'sha256':specification['manifest_sha256']}]:
+            name=row['path'];target=contained_path(root,name);data=bundle.read(prefix+name)
+            if len(data)!=int(row['bytes']) or hashlib.sha256(data).hexdigest()!=row['sha256']:raise ValueError('Update member mismatch: '+name)
+            if target.exists():
+                if not target.is_file() or digest(target)!=row['sha256']:raise FileExistsError('Current input differs: '+name)
+            else:planned.append(row)
+        if not check_only:
+            for row in planned:
+                target=contained_path(root,row['path']);target.parent.mkdir(parents=True,exist_ok=True)
+                with target.open('xb') as stream:stream.write(bundle.read(prefix+row['path']))
+        return dict(status='CHECKED' if check_only else 'PREPARED',archive_sha256=specification['sha256'],
+            manifest_files_checked=len(rows),files_added=0 if check_only else len(planned),source_files_overwritten=0)
+
+
+def prepare(archive, check_only=False, update_archive=None):
+    # Verify both inputs before adding files. Historical bindings stay intact;
+    # the current figure selection has its own namespace and manifest.
+    if update_archive is not None:
+        _prepare_base(archive,True)
+        _prepare_update(update_archive,True)
+    result=_prepare_base(archive,check_only)
+    if update_archive is not None:result['current_figure_update']=_prepare_update(update_archive,check_only)
+    else:result['current_figure_update']='NOT_ATTACHED; provide --update-archive for the current article'
     return result
