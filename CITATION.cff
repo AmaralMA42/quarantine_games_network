@@ -2,8 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this software and its version when reusing the code or data."
 type: software
 title: "Quarantine Games on Networks: simulation, analysis and reproducibility"
-version: "rc9.5-p10.4-authorial-20261106"
-date-released: 2026-11-06
+version: "rc10-s5e12.1"
 url: "https://github.com/AmaralMA42/quarantine_games_network"
 repository-code: "https://github.com/AmaralMA42/quarantine_games_network"
 license: MIT
@@ -12,7 +11,6 @@ authors:
     given-names: "Marco Antonio"
     orcid: "https://orcid.org/0000-0001-5607-6475"
 abstract: >-
-  Shared stochastic epidemic and voluntary-protection dynamics, analysis modules,
-  and stored-data reconstruction for Quarantine Games on Networks: Beyond Epidemic
-  Establishment. This is an RC9.5 P10.4 reproducibility prerelease. The software is
-  MIT licensed; the accompanying original scientific data and figures are CC BY 4.0.
+  Code, measured data and figure materials for the RC10 network study.
+  The scientific archive restores 17 figure assets and redraws Figures 10, 11 and S5.
+  Original scientific data, tables and figures use CC BY 4.0.
