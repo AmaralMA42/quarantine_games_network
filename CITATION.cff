@@ -1,9 +1,10 @@
 cff-version: 1.2.0
 message: "Please cite this software and its version when reusing the code or data."
 type: software
-title: "Quarantine Games on Networks: simulation, analysis and reproducibility"
+title: "Quarantine Games on Networks: simulation code, measured data and figure materials"
 version: "rc10-s5e12.1"
-url: "https://github.com/AmaralMA42/quarantine_games_network"
+doi: "10.5281/zenodo.24518324"
+url: "https://doi.org/10.5281/zenodo.24518324"
 repository-code: "https://github.com/AmaralMA42/quarantine_games_network"
 license: MIT
 authors:
